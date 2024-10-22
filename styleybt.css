@@ -1,0 +1,265 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Header */
+header .logo{
+  width: 25px;
+}
+header .offcanvas-start{
+  max-width: 241px;
+}
+header a{
+  color: #000;
+  text-decoration: none;
+}
+form input{
+  padding: 11px 0px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+form input:hover{
+  background-color: #00f;
+}
+
+.fa-magnifying-glass{
+  background-color: #f8f8f8;
+  padding: 10px 15px 10px 25px;
+  margin-left: -32px;
+  border: 1px solid #ccc;
+}
+.fa-magnifying-glass:hover{
+  background-color: #f0f0f0;
+}
+.fa-microphone{
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  border-radius: 100%;
+}
+.fa-microphone:hover{
+  background-color: #e6e6e6;
+}
+.search{
+  background-color: aqua;
+}
+.settings-menu{
+  width: 25px;
+  height: 25px;
+}
+.connect{
+  border: 1px solid;
+  padding: 5px 15px;
+  border-radius: 21px;
+  color: #00f;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.connect:hover{
+  background-color: #87ceeb;
+}
+/* Sidebar */
+.sidebar a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 81px;
+}
+.sidebar .sidebar-item h6{
+  color: #000;
+  font-size: 11px;
+}
+.sidebar .sidebar-item img{
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+}
+/* Menu bar */
+.box-right ul{
+  padding-bottom: 15px;
+  width: 74rem;
+  /* background-color: #00f; */
+  overflow: scroll;
+}
+
+.box-right ul::-webkit-scrollbar{
+  height: 2px;
+  background-color: red;
+  display: none;
+}
+.box-right ul li{
+  background-color: #f2f2f2;
+  padding: 5px 13px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.box-right ul li:hover{
+  background-color: #e5e5e5;
+}
+.box-right ul .blacked{
+  background-color: #333333;
+  color: #fff;
+}
+.ybt span{
+  font-weight: bold;
+  font-size: 18px;
+}
+.ybt::before{
+  content: 'SN';
+  font-size: 11px;
+  margin-right: 5px;
+  color: #909090;
+  position: relative;
+  /* top: -1px; */
+  left: 116px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  line-height: 1;
+}
+.offcanvas-start .ybtoff{ 
+  margin-left: -15px;
+}
+.ytboff::before{
+  content: 'SN';
+  font-size: 11px;
+  margin-right: 5px;
+  color: #909090;
+  position: relative;
+  top: -9px;
+  left: 87px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  line-height: 1;
+}
+/* Video */
+.video{
+  margin-bottom: 20px;
+}
+.video-title{
+  margin-top: 10px;
+  width: 337px;
+}
+.video-title img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.video-title h5{
+  font-size: 16px;
+  font-weight: 600;
+}
+.video-title h6, p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #909090;
+}
+.video-title h6 i{
+  color: #000;
+}
+.video-body iframe{
+  width: 361px;
+  height: 215px;
+  border-radius: 15px;
+}
+/* Shorts */
+.shorts-body{
+  width: 251px;
+  height: 435px;
+  border-radius: 15px;
+}
+.shorts-body video{
+ width: 100%;
+ height: 100%;
+ border-radius: 15px;
+}
+.shorts-title{
+  margin-top: 15px;
+  width: 231px;
+}
+.shorts-title h5{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* PLUS */
+.plus{
+  display: flex;
+  position: relative;
+}
+.circle{
+  width: 400px;
+  height: 30px;
+  background: #fff;
+  padding: 15px;
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  z-index: 3;
+  position: absolute;
+  top: -15px;
+  left: 25rem;
+}
+.barre{
+  position: absolute;
+}
+.circle a{
+  text-decoration: none;
+  color: #000;
+}
+.barre{
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+}
+.circle:hover{
+  background: #ccc;
+}
+@media (max-width: 761px) {
+  header{
+    padding-top: 15px;
+  }
+  .box-left {
+    min-width: 45px;
+  }
+  .sidebar{
+    width: 43px;
+  }
+  .box-right ul{
+    width: 18rem;
+  }
+  .sidebar a{
+    margin: auto;
+    width: 39px;
+  }
+  .sidebar .sidebar-item img{
+    width: 25px;
+    height: 25px; 
+  }
+  .sidebar .sidebar-item h6{
+    font-size: 12px;
+  }
+  .video-body iframe{
+    width: 295px;
+    height: 175px;
+  }
+  .video-title{
+    width: 291px;
+  }
+  .video-title h5{
+    font-size: 14px;
+  }
+  .video-title h6, p{
+    font-size: 12px;
+  }
+}

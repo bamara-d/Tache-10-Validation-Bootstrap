@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Youtube Clone</title>
+    <link rel="stylesheet" href="styleybt.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="fixed-top bg-white w-100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-3 py-2 ps-3">
+            <div
+              class="d-flex justify-content-start ps-1 align-items-center"
+            >
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-backdrop="static"
+                tabindex="-1"
+                id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel"
+              >
+                <div class="offcanvas-header d-flex w-50">
+                  <i
+                    class="fa-solid fa-bars"
+                    type="button"
+                    class="btn-close ms-5"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></i>
+                  <a href="#" class="ms-3 d-flex">
+                    <img
+                      src="pict/logo-ybt.png"
+                      alt="Logo Youtube"
+                      class="img-fluid logo ms-2"
+                    />
+                    <span class="ytboff me-4" style="font-size: 18px; font-weight: 700"
+                      >Youtube</span
+                    >
+                  </a>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <div class="row mt-3">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/home.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#index.html">Accueil</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/shorts.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Shorts</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/subscription.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Abonnements</a></p>
+                      </div>
+                    </div>
+                    <div class="row"><hr /></div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/account_circle.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Vous</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/history.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Historique</a></p>
+                      </div>
+                    </div>
+                    <div class="row"><hr /></div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="text-dark">
+                          Connectez-vous à YouTube pour cliquer sur "J'aime",
+                          ajouter un commentaire et vous abonner.
+                        </p>
+                        <a href="#" class="connect">
+                          <i class="fa-regular fa-circle-user"></i>
+                          <span>Se connecter</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row mt-4"><hr /></div>
+                    <h5>Explorer</h5>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/trending.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Tendances</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/music.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Musique</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/movie.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Films</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/game.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Jeux video</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/sport.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Sport</a></p>
+                      </div>
+                    </div>
+                    <div class="row"><hr /></div>
+                    <h6>Autres contenus YouTube</h6>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/logo-ybt.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Youtube Premium</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/ytb-msc.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Youtube Musique</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/ytb-kids.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Youtube Kids</a></p>
+                      </div>
+                    </div>
+                    <div class="row"><hr /></div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/settings.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Paramètres</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4 text-ellipsis">
+                        <img
+                          src="pict/flag.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Historique des signalements</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/help.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Aide</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex gap-4">
+                        <img
+                          src="pict/feedback.png"
+                          alt=""
+                          class="img-fluid"
+                          style="width: 25px; height: 25px"
+                        />
+                        <p><a href="#">Envoyer des commentaires</a></p>
+                      </div>
+                    </div>
+                    <div class="row"><hr /></div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p>
+                          <a href="#">Présentation </a
+                          ><span> <a href="#">Presse</a></span>
+                        </p>
+                        <p>
+                          <a href="#">Droits d'auteur</a>
+                          <span><a href="#">Nous contacter</a></span>
+                        </p>
+                        <p>
+                          <a href="">Créateurs</a>
+                          <span><a href="#">Publicité </a></span>
+                        </p>
+                      </div>
+                      <div class="col-12 p-2">
+                        <p><a href="#">Conditions d'utilisation</a></p>
+                        <p><a href="#">Confidentialité</a></p>
+                        <p><a href="#">Règles et sécurité</a></p>
+                        <p><a href="#">Premiers pas sur YouTube</a></p>
+                        <p>
+                          <a href="#">Tester de nouvelles fonctionnalités </a>
+                        </p>
+                      </div>
+                      <div class="col-md-12">
+                        <p>© 2024 Google LLC</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="ms-3 d-flex ybt">
+                <img
+                  src="pict/logo-ybt.png"
+                  alt="Logo Youtube"
+                  class="img-fluid logo"
+                />
+                <span class="ms-1">Youtube</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 d-none d-md-block p-2">
+            <div class="d-flex justify-content-center gap-3 align-items-center">
+              <form class="d-flex mx-auto w-75 gap-4 align-items-center">
+                <input
+                  class="form-control me-2 rounded-start-4 rounded-end-0 active"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fa-solid fa-magnifying-glass rounded-end-4"></i>
+                <i class="fa-solid fa-microphone"></i>
+              </form>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 py-2 pe-3">
+            <div
+              class="d-flex justify-content-end px-2 align-items-center"
+            >
+              <a href="#" class="settings-menu"
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></a>
+              <a href="#" class="connect">
+                <i class="fa-regular fa-circle-user"></i>
+                <span>Se connecter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="d-flex">
+      <div class="box-left bg-white" style="min-width: 90px; min-height: 100vh">
+        <div
+          class="sidebar position-fixed bg-white h-100 mt-5"
+          style="width: 83px"
+        >
+          <div class="sidebar-item pt-5">
+            <a class="active" href="#">
+              <img src="pict/home.png" alt="" class="img-fluid" />
+              <h6>Accueil</h6>
+            </a>
+          </div>
+          <div class="sidebar-item mt-4">
+            <a href="#">
+              <img src="pict/shorts.png" alt="" />
+              <h6>Shorts</h6>
+            </a>
+          </div>
+          <div class="sidebar-item mt-4">
+            <a href="#">
+              <img src="pict/subscription.png" alt="" />
+              <h6>Abonnements</h6>
+            </a>
+          </div>
+          <div class="sidebar-item mt-4">
+            <a href="#">
+              <img src="pict/account_circle.png" alt="" />
+              <h6>Vous</h6>
+            </a>
+          </div>
+          <div class="sidebar-item mt-4">
+            <a href="#">
+              <img src="pict/history.png" alt="" />
+              <h6>Historique</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box-right justify-content-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="container-fluid">
+                <!-- SCROLLED MENU -->
+                <div class="row pb-1 justify-content-center">
+                  <div class="col-md-12 mt-4">
+                    <nav class="mt-5 p-1">
+                      <ul class="d-flex gap-4 list-unstyled pb-1">
+                        <li class="nav-item blacked">
+                          <a href="#" class="nav-link">Tous</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Direct</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Podcasts</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Musique</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Débats</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Conférences</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Séries</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Comédie </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Histoire</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Jeux </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Football</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Rally </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Basketball</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Tennis </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Histoire</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <!-- FIN SCROLLED MENU -->
+                <!-- PREMIERS 6 VIDEOS -->
+                <div class="row justify-content-center">
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/vrK3YIxq4wI"
+                          title="Questions-Reponses Zalle yb Vs PM Ousmane Sonko Et Bougane Gueye Dany Cagnotte Waroul am ??🤣🤣"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Zalle.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Questions-Reponses Zalle yb Vs PM Ousmane Sonko Et
+                            Bougane Gueye Dany Cagnotte Waroul am ??🤣🤣
+                          </h5>
+                          <h6>
+                            Zalle Yb <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">53K vues • Il y a 5 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/NoxXSSYdIKo"
+                          title="Lan moo Nara Xéw Bou Sonko Wala Opposition améé Majorité assemblée nationale ? ENJEU 2"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/xalaat tv.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Lan moo Nara Xéw Bou Sonko Wala Opposition améé
+                            Majorité assemblée nationale ? ENJEU 2
+                          </h5>
+                          <h6>
+                            Xalaat TV <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">109K vUes • Il y a 9 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/qnUrz4gAGzE"
+                          title="“Sonko Sonkolou, Dieundeu Vues..” Pa Moussa achève Bougane après sa dernière sortie “dafay décevoir"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/sl.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            “Sonko Sonkolou, Dieundeu Vues..” Pa Moussa achève
+                            Bougane après sa dernière sortie “dafay décevoir
+                          </h5>
+                          <h6>
+                            Sans Limites TV
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">28K vues • Il y a 17 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/Ty6X1pY5e5Q"
+                          title='Tirs groupés de l&#39;opposition contre le régime de Diomaye, réplique de Macky contre Sonko" jangat M.D'
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/walf.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            Tirs groupés de l'opposition contre le régime de
+                            Diomaye, réplique de Macky contre Sonko" jangat M.D
+                          </h5>
+                          <h6>
+                            Walfadjri TV
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">34K vues • Il y a 7 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/_H7PDBoIhx4"
+                          title="AWA, la première IA capable de comprendre et de parler le wolof"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/RTS.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            AWA, la première IA capable de comprendre et de
+                            parler le wolof
+                          </h5>
+                          <h6>
+                            RTS - RADIO TÉLÉVISION SÉNÉGALAISE
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">28K vues • Il y a 17 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/vDEDl2I1mmQ"
+                          title="Kédougou : Arrivée du président de la République Bassirou Diomaye Faye"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/APS.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            Kédougou : Arrivée du président de la République
+                            Bassirou Diomaye Faye
+                          </h5>
+                          <h6>
+                            APS (Agence de Presse Sénégalaise)
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">26K vues • Il y a 5 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FIN PREMIERS 6 VIDEOS -->
+                <div class="row my-5 d-none d-md-block">
+                  <div class="col-md-12">
+                    <div class="plus">
+                      <div
+                        class="circle d-flex justify-content-center align-items-center"
+                      >
+                        <a href="#autres"
+                          >Plus <i class="fa-solid fa-chevron-down"></i
+                        ></a>
+                      </div>
+                      <div class="barre"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- PREMIERS 4 SHORTS -->
+                <div class="row justify-content-center">
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/rts1.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>
+                          L’arrivé du premier ministre M Ousmane Sonko à
+                          Diamniadio
+                        </h5>
+                        <p>102 K vues</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/zalleyb😂.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>Challenge bala 😂</h5>
+                        <p>5 K vews</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/walfmovie.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>
+                          Papa Makhtar Diallo sur la cause principale des
+                          insultes sur les réseaux sociaux
+                        </h5>
+                        <p>1.3 K vues</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/slmovie.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>La sortie de Sonko chez lui</h5>
+                        <p>76 K vues</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FIN PREMIERS 4 SHORTS -->
+                <!-- DEUXIEMES 6 VIDEOS -->
+                <div class="row">
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/kJOqIaGwQ7Y"
+                          title="Top Programming Languages to Learn in 2024 (For High-paying Jobs)"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/Mosh.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            Top Programming Languages to Learn in 2024 (For
+                            High-paying Jobs)
+                          </h5>
+                          <h6>
+                            Programming with Mosh
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">413K vues • Il y a 6 mois</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/BsDoLVMnmZs"
+                          title="HTML Tutorial For Beginners In Hindi (With Notes) 🔥"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Harry.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            HTML Tutorial For Beginners In Hindi (With Notes) 🔥
+                          </h5>
+                          <h6>
+                            CodeWithHarry
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">13M vues • Il y a 3 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/IyDVvGmzTlo?list=PLGLfVvz_LVvTP2Op3wZlaGTUcgCfDuwn8"
+                          title="JavaScript Tutorial &amp; Real JavaScript Projects"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Derek.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            JavaScript Tutorial & Real JavaScript Projects
+                          </h5>
+                          <h6>
+                            Derek Banas <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">79K vues • Il y a 5 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/PkZNo7MFNFg"
+                          title="Learn JavaScript - Full Course for Beginners"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/freecodecamp.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Learn JavaScript - Full Course for Beginners
+                          </h5>
+                          <h6>
+                            freeCodeCamp.org
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">18M vues • Il y a 5 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/BzYMFd-lQL4"
+                          title="Learn HTML for Beginners - W3Schools.com"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/w3s.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            Learn HTML for Beginners - W3Schools.com
+                          </h5>
+                          <h6>
+                            w3schools.com
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">128K vues • Il y a 3 mois</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/vqMXfjJFXvY"
+                          title="How Professional Skills Take Your Career to the Next Level"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/codeacademy.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            How Professional Skills Take Your Career to the Next
+                            Level
+                          </h5>
+                          <h6>
+                            Codecademy <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">2K vues • Il y a 2 mois</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FIN DEUXIEMES 6 VIDEOS -->
+                <!-- DEUXIEMES 4 SHORTS -->
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/moshmovie.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>Become a Frontend Developer in 12 Months! 🚀</h5>
+                        <p>23 K vues</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/cwhmovie.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>AI assisted academic writing 🔥 #ai_thor</h5>
+                        <p>40 K vues</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/fccmovie.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>Cafe Menu in HTML & CSS</h5>
+                        <p>23 K vues</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="shorts">
+                      <div class="shorts-body">
+                        <video
+                          src="pict/shorts/w3smovie.mp4"
+                          autoplay
+                          muted
+                        ></video>
+                      </div>
+                      <div class="shorts-title">
+                        <h5>
+                          Introduction to CSS Part 1 - #w3schools #css
+                          #webdevelopment
+                        </h5>
+                        <p>7 K vues</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FIN DEUXIEMES 4 SHORTS -->
+                <!-- AUTRES VIDEOS -->
+                <div class="row">
+                  <div class="col-md-4 p-1">
+                    <div id="autres"></div>
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/xxPPcGPOE8g"
+                          title="Le résumé de Tottenham / West Ham - Premier League 2024-25 (J8)"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/canal+.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Le résumé de Tottenham / West Ham - Premier League
+                            2024-25 (J8)
+                          </h5>
+                          <h6>
+                            Canal+ Sport Afrique
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">87 K vues • Il y a 8 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/NPrg2CCYycw"
+                          title="MBAPPÉ IMPRESSIONNE déjà ses coéquipiers à l&#39;entrainement !"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/beinsport.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            MBAPPÉ IMPRESSIONNE déjà ses coéquipiers à
+                            l'entrainement !
+                          </h5>
+                          <h6>
+                            beIN SPORTS France
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">88 K vues • Il y a 2 mois</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/j1d6WSXGpA0"
+                          title="CELTA VIGO 1-2 REAL MADRID À UNE SEMAINE DU CLASICO MBAPPÉ &amp; VINICIUS EN FORME ! (LA LIGA)"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/outsiderz.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            CELTA VIGO 1-2 REAL MADRID À UNE SEMAINE DU CLASICO
+                            MBAPPÉ & VINICIUS EN FORME ! (LA LIGA)
+                          </h5>
+                          <h6>
+                            Les OUTSIDERZ
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">58 K vues • Il y a 1 jours</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/fWwQ1VWfDFM"
+                          title="Pourquoi Jürgen Klopp a perdu du crédit en Allemagne"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/afterfoot.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Pourquoi Jürgen Klopp a perdu du crédit en Allemagne
+                          </h5>
+                          <h6>
+                            AFTER FOOT <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">23 K vues • Il y a 5 jours</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/Sl_RCxIBPbc"
+                          title="Premier League : Guardiola est-il en train de ruiner le football ?"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/lequipe.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Premier League : Guardiola est-il en train de ruiner
+                            le football ?
+                          </h5>
+                          <h6>
+                            L'ÉQUIPE <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">144K vues • Il y a 3 semaines</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/0WzmEbtkBKc"
+                          title="MILAN-UDINESE 1-0 | HIGHLIGHTS | Chukwueze wins it for Milan | SERIE A 2024/25"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/serieA.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            MILAN-UDINESE 1-0 | HIGHLIGHTS | Chukwueze wins it
+                            for Milan | SERIE A 2024/25
+                          </h5>
+                          <h6>
+                            Serie A <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">139K vues • Il y a 2 jours</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/uLTNhwDJFJk"
+                          title="Le kâma de Kawaki | Boruto : Naruto Next Generations"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Crunchyroll-FR.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Le kâma de Kawaki | Boruto : Naruto Next Generations
+                          </h5>
+                          <h6>
+                            Crunchyroll FR
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">83K vues • Il y a 1 an</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/dTchJALGL2E"
+                          title="BAM ! 💥 | Blue Lock"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Crunchyroll-FR.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">BAM ! 💥 | Blue Lock</h5>
+                          <h6>
+                            Crunchyroll FR
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">341 K vues • Il y a 2 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/yWPdlUyoLWg"
+                          title="Machine à lancer | JUJUTSU KAISEN"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Crunchyroll-FR.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">Machine à lancer | JUJUTSU KAISEN</h5>
+                          <h6>
+                            Crunchyroll TV
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">40 K vues • Il y a 1 an</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/pnn96bVd3ps"
+                          title="Naruto Shippuden : Sasuke Uchiwa vs Itachi Uchiwa vf"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Manga.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">
+                            Naruto Shippuden : Sasuke Uchiwa vs Itachi Uchiwa vf
+                          </h5>
+                          <h6>
+                            Manga next génération
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">3 K vues • Il y a 2 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/sEAattVQcHg"
+                          title="Naruto vs pain"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Manga.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">Naruto vs pain</h5>
+                          <h6>
+                            Manga next génération
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">1.8 K vues • Il y a 2 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/I5bJVf4hjRg"
+                          title="Boruto vs kawaki vs Naruto"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/Manga.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">Boruto vs kawaki vs Naruto</h5>
+                          <h6>
+                            Manga next génération
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">568 vues • Il y a 2 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/fRfbK-yt1BI"
+                          title="Bêtisier sport mécanique 2019"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/maxi.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">Bêtisier sport mécanique 2019</h5>
+                          <h6>
+                            maxisound74 <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">513 K vues • Il y a 4 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/Lc8ldWNlyEE"
+                          title="Montée historique de Paradis 2019 Drift &amp; show"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/maxi.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            Montée historique de Paradis 2019 Drift & show
+                          </h5>
+                          <h6>
+                            maxisound74 <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">1.6 M vues • Il y a 5 ans</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/o5PkPxRKOGo"
+                          title="Day 3 Highlights | WRC Central European Rally 2024"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/wrc.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            Day 3 Highlights | WRC Central European Rally 2024
+                          </h5>
+                          <h6>
+                            FIA World Rally Championship
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">30 K vues • Il y a 5 heures</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/otygZccA6oE"
+                          title="Day 1 Highlights | WRC Rally Chile Bio Bío 2024"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img src="pict/img/wrc.jpg" alt="" class="img-fluid" />
+                        <div class="video-info">
+                          <h5 class="">
+                            Day 1 Highlights | WRC Rally Chile Bio Bío 2024
+                          </h5>
+                          <h6>
+                            FIA World Rally Championship
+                            <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">85 K vues • Il y a 3 semaines</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/LaNagcD1sOY"
+                          title="2025 Kawasaki Versys 1100 - PURE SOUND"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/motorlive.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5>2025 Kawasaki Versys 1100 - PURE SOUND</h5>
+                          <h6>
+                            MOTOR LIVE <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">15 K vues • Il y a 3 jours</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-1">
+                    <div class="video">
+                      <div class="video-body">
+                        <iframe
+                          src="https://www.youtube.com/embed/9HrvNu39dnM"
+                          title="Mash Fr 750 - PURE SOUND"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="video-title d-flex gap-3">
+                        <img
+                          src="pict/img/motorlive.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="video-info">
+                          <h5 class="">Mash Fr 750 - PURE SOUND</h5>
+                          <h6>
+                            MOTOR LIVE <i class="fa-solid fa-circle-check"></i>
+                          </h6>
+                          <p class="">7,7 K vues • Il y a 8 jours</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FIN AUTRES VIDEOS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
